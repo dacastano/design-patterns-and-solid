@@ -11,11 +11,11 @@ public class UserController {
 
     private UserValidator validator = new UserValidator();
     private UserPersistenceService userPersistenceService = new UserPersistenceService();
-    
+    private UserMapper userMapper = new UserMapper();
+
     //Create a new user
     public String createUser(String userJson) throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        User user = mapper.readValue(userJson, User.class);
+        User user = userMapper.mapUserFromJson(userJson);
 
         boolean valid = validator.validateUser(user);
         if(!valid) {
