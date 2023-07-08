@@ -17,8 +17,8 @@ public class UserController {
     public String createUser(String userJson) throws IOException {
         User user = userMapper.mapUserFromJson(userJson);
 
-        boolean valid = validator.validateUser(user);
-        if(!valid) {
+        //boolean valid = validator.validateUser(user);
+        if(!validator.validateUser(user)) {
             return "ERROR";
         }
 
