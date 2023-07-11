@@ -58,3 +58,10 @@ target/
 ### Maven ###
 log/
 target/
+
+# Ignore properties files
+*.properties
+
+# Ignore YAML files
+*.yaml
+*.yml
