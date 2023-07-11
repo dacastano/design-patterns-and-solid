@@ -12,6 +12,8 @@ public class Main {
 		
 		useRectangle(rectangle);
 		
+		useRectangle(square);
+
 	}
 
 	private static void useRectangle(Rectangle rectangle) {
