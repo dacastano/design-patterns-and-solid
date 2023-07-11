@@ -20,9 +20,8 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-<<<<<<< HEAD
 replay_pid*
 
 # IDE and build-related files
@@ -35,10 +34,8 @@ target/
 
 # Custom files
 test_msg.txt
-=======
 
 ### IntelliJ ###
-.idea/
 *.iml
 *.iws
 out/
@@ -61,4 +58,3 @@ target/
 ### Maven ###
 log/
 target/
->>>>>>> main
